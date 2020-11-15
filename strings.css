@@ -1,0 +1,244 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 2.5px;
+    font-family: Arial Narrow, sans-serif;
+}
+
+.top-bar{
+    background: #0c8797;
+    height: 1.9rem;
+    padding: .3rem .3rem;
+    text-align: right;
+
+}
+
+.top-bar a{
+    padding-right: 20px;
+    color: #b9e1e1;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+nav{
+    background-color: #051427;
+    padding: 20px 150px 10px 70px;
+    border-left: 100px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li.logo{
+    flex: 1;
+}
+
+.navbar-brand img{
+    padding-left: 90px;
+    width: 300px;
+    height: 95px;
+}
+
+nav ul div.items{
+    padding: 0 25px;
+    display: inline-flex;
+    flex: 1.8;
+}
+
+nav ul div.items a{
+    word-spacing: 20px;
+    text-decoration: none;
+    color: #b9e1e1;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+
+nav ul div.items a:hover{
+    transition: 0.3s;
+    color: #0e84a0;
+
+}
+
+nav ul .search-icon{
+    height: 40px;
+    width: 240px;
+    display: flex;
+    background: transparent;
+    border-radius: 30px;
+    border: 1px solid #01aebe;
+
+}
+
+ul .search-icon input{
+    height: 100%;
+    width: 200px;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #b9e1e1;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+ul .search-icon .icon{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: transparent;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+
+nav ul .search-icon .icon span{
+    color: teal;
+    font-size: 18px;
+}
+
+nav ul li.btn{
+    font-size: 29px;
+    flex: 1;
+    padding: 0px 40px;
+    margin: 20px;
+    display: none;
+}
+
+nav ul li.btn span{
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 42px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: teal;
+}
+
+nav ul li.btn:hover span::before{
+    content: '\f00d';
+}
+@media screen and (max-width:1052px){
+
+    nav{
+        padding: 10px 40px 10px 0px;
+    }
+
+    nav ul li.logo{
+        height: 10px;
+    }
+
+    .navbar-brand img{
+        height: 60px;
+        width: 15rem;
+        margin-right: 170px;
+    
+    }
+
+
+    nav ul div.items{
+        flex: 4;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav ul li.btn{
+        display: block;
+        margin-left: 300px;  
+        margin-top: 2px; 
+
+}
+
+    nav{
+        overflow-x: hidden;
+        z-index: 1;
+        padding: 10px 40px 5px 0;
+    }
+
+    nav ul div.items{
+        z-index: -1;
+        position: fixed;
+        top: -220px;
+        right: 0;
+        width: 100%;
+        background: #0c8797;
+        display: inline-block;
+        transition: top .4s;
+    }
+
+    nav ul div.items.show{
+        top: 30px;
+    }
+
+    nav ul div.items li{
+        text-align: center;
+        line-height: 30px;
+        margin: 10px;
+    }
+
+    nav ul div.items li a{
+        font-size: 19px;
+        color: #b9e1e1;
+
+    }
+
+    nav ul div.items a:hover{
+        transition: 0.3s;
+        color: #051427;
+    
+    }
+
+}
+
+@media screen and (max-width:1000px){
+    nav{
+        overflow-x: hidden;
+        z-index: 1;
+        padding: 10px 40px 5px 0;
+    }
+
+    nav ul div.items a{
+        color: red;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
